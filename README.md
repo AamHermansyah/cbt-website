@@ -1,0 +1,11 @@
+# Detail page
+1. [Landing page](https://aamhermansyah.github.io/cbt-website/)
+2. [About us](https://aamhermansyah.github.io/cbt-website/about-us.html)
+3. [Signup](https://aamhermansyah.github.io/cbt-website/signup.html)
+4. [Login](https://aamhermansyah.github.io/cbt-website/login.html)
+5. [Forgot password](https://aamhermansyah.github.io/cbt-website/forgot-password.html)
+6. [Reset password](https://aamhermansyah.github.io/cbt-website/reset-password.html)
+7. [Account verification](https://aamhermansyah.github.io/cbt-website/account-verification.html)
+8. [Assessment](https://aamhermansyah.github.io/cbt-website/assessment.html)
+4. [Assessment enrolled](https://aamhermansyah.github.io/cbt-website/assessment-enrolled.html)
+4. [Profile](https://aamhermansyah.github.io/cbt-website/profile.html)
