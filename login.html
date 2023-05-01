@@ -20,7 +20,7 @@
       </div>
       <div class="flex-1 md:px-10">  
         <div class="flex text-[20px] font-semibold text-neutral-n50">
-          <a href="/cbt-website/signup.html" class="flex-1 text-center p-2 border-b-2 border-neutral-n50">
+          <a href="/signup.html" class="flex-1 text-center p-2 border-b-2 border-neutral-n50">
             Signup
           </a>
           <a href="" class="flex-1 text-primary text-center border-b-2 border-primary p-2">
@@ -84,7 +84,7 @@
               </label>
             </div>
             <div>
-              <a href="/cbt-website/forgot-password.html" class="text-primary">Forgot Password?</a>
+              <a href="/forgot-password.html" class="text-primary">Forgot Password?</a>
             </div>
           </div>
 
@@ -92,7 +92,7 @@
             Login
           </button>
           <p class="py-4 text-center">
-            Don't have an account? <a href="/cbt-website/signup.html" class="text-primary font-semibold">Create an Account</a>
+            Don't have an account? <a href="/signup.html" class="text-primary font-semibold">Create an Account</a>
           </p>
         </form>
       </div>
@@ -101,34 +101,32 @@
 
   <!-- Footer -->
   <footer class="container-layout">
-    <span>Copyright</span>
-    <nav class="inline-block ml-4">
-      <ul class="flex gap-4">
-        <li><a href="">Terms & Conditions</a></li>
-        <li><a href="">Privacy Policy</a></li>
-        <li><a href="">Help</a></li>
-      </ul>
-    </nav>
+    <div class="text-sm sm:text-base">
+      <span class="block py-2 text-center sm:inline-block">Copyright</span>
+      <nav class="w-full sm:w-auto inline-block sm:ml-4">
+        <ul class="w-full flex justify-center sm:justify-start gap-4">
+          <li><a href="">Terms & Conditions</a></li>
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Help</a></li>
+        </ul>
+      </nav>
+    </div>
   </footer>
 
   <script>
-    const btnVisibilityPassword = document.querySelectorAll('form .password-visibility');
-    btnVisibilityPassword.forEach((element) => {
-      element.addEventListener('click', () => {
-        element.style.display = 'none';
-        element.nextElementSibling.style.display = 'block';
-        element.parentElement.previousElementSibling.type = 'text';
-      });
+    const btnVisibilityPassword = document.querySelector('form .password-visibility');
+    btnVisibilityPassword.addEventListener('click', () => {
+      btnVisibilityPassword.style.display = 'none';
+      btnVisibilityPassword.nextElementSibling.style.display = 'block';
+      btnVisibilityPassword.parentElement.previousElementSibling.type = 'text';
     });
 
-    const btnHiddenPassword = document.querySelectorAll('form .password-hidden');
-    btnHiddenPassword.forEach((element) => {
-      element.addEventListener('click', () => {
-        element.style.display = 'none';
-        element.previousElementSibling.style.display = 'block';
-        element.parentElement.previousElementSibling.type = 'password';
-      })
-    })
+    const btnHiddenPassword = document.querySelector('form .password-hidden');
+    btnHiddenPassword.addEventListener('click', () => {
+      btnHiddenPassword.style.display = 'none';
+      btnHiddenPassword.previousElementSibling.style.display = 'block';
+      btnHiddenPassword.parentElement.previousElementSibling.type = 'password';
+    });
   </script>
 </body>
 </html>
