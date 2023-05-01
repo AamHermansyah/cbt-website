@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign up page</title>
+  <link rel="stylesheet" href="dist/output.css">
+</head>
+<body>
+  <!-- Header navigation -->
+  <header class="container-layout w-full flex justify-between items-center">
+    <div>
+      <div class="w-[70px] h-[70px] flex-center rounded-full bg-primary">
+        <span class="text-[11px] text-center text-white">
+          Company logo
+        </span>
+      </div>
+    </div>
+    <nav class="hidden md:block">
+      <ul class="flex-center gap-6 font-semibold">
+        <li><a href="/" class="text-primary">Home</a></li>
+        <li><a href="/about-us.html">About us</a></li>
+        <li><a href="/">Contact us</a></li>
+        <li><a href="/">Help</a></li>
+      </ul>
+    </nav>
+    <div class="hidden md:flex gap-4">
+      <button class="btn bg-primary text-white">
+        Sign up
+      </button>
+      <button class="btn btn-outline text-primary border-primary">
+        Login
+      </button>
+    </div>
+
+    <!-- hamburger navigation -->
+    <div class="block md:hidden group">
+      <div class="relative w-[40px] h-[40px] p-1.5 cursor-pointer group">
+        <img
+          src="/public/icons/menu.svg"
+          alt="menu-icon"
+          class="absolute inset-0 group-hover:opacity-0 w-full h-full transition-opacity duration-200"
+        >
+        <img
+          src="/public/icons/x.svg"
+          alt="x-icon"
+          class="absolute inset-0 opacity-0 group-hover:opacity-100 w-full h-full transition-opacity duration-200"
+        >
+      </div>
+      <div class="hidden group-hover:block fixed right-[3%] sm:right-[8%] top-[95x] bg-white p-10 shadow-xl rounded-xl border border-neutral-n30">
+        <nav class="block">
+          <ul class="flex-center flex-col gap-6 font-semibold">
+            <li><a href="/" class="text-primary">Home</a></li>
+            <li><a href="/">About us</a></li>
+            <li><a href="/">Contact us</a></li>
+            <li><a href="/">Help</a></li>
+          </ul>
+        </nav>
+        <div class="flex gap-4 mt-6">
+          <button class="btn bg-primary text-white">
+            Sign up
+          </button>
+          <button class="btn btn-outline text-primary border-primary">
+            Login
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About us -->
+  <section id="about-us" class="container-layout py-[50px]">
+    <h1 class="text-[32px] font-semibold text-center">About us</h1>
+    <div class="mt-[70px]">
+      <div class="max-w-[637px] mx-auto">
+        <img
+          src="/public/images/collab-pana-1.png"
+          alt="macbook-pro-16"
+          class="w-full aspect-video lg:aspect-auto object-contain"
+        >
+      </div>
+      <div class="md:px-24 lg:px-0 sm:text-[20px] text-justify">
+        <p class="mt-10">
+          Welcome to <b>&lt;application name here&gt;</b>, designed to help individuals prepare for professional certifications with real-life test questions and personalized study plans.
+          If you're interested in taking a professional certification, you know how important it is to be prepared. That's where <app name> comes in. Our computer-based test software provides access to a large pool of real-life (previous years) test questions, so you can get a sense of what the actual test will be like and prepare accordingly.
+        </p>
+        <p class="mt-10">
+          <b>&lt;app name&gt;</b> is designed to be user-friendly, with a simple interface that makes it easy to create customized test plans based on your specific needs and goals. Whether you're preparing for certification in healthcare, finance, or any other field, our software can help you focus on the areas where you need improvement.
+        </p>
+        <p class="mt-10">
+          With <b>&lt;app name&gt;</b>, you'll receive detailed feedback on your performance, so you can identify your strengths and weaknesses and focus your studying where it matters most. Our software also includes progress tracking tools, so you can see how you're doing over time and adjust your study plan as needed.
+        </p>
+        <p class="mt-10">
+          We know that preparing for a professional certification can be stressful and expensive, which is why we offer affordable pricing options and a range of free trials and discounts for bulk purchases. We want to make it as easy as possible for you to prepare for your certification and achieve your goals.
+        </p>
+        <p class="mt-10">
+          Don't leave your certification to chance. Sign up for our computer-based test software today and start preparing with confidence. Our real-life test questions and personalized study plans will help you succeed on the actual test and advance your career.
+        </p>
+      </div>
+      <div class="mt-[70px] text-center">
+        <button class="btn btn-outline border-primary text-primary px-[75px]">
+          Sign up Now!
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="container-layout bg-primary text-white pb-[19px] mt-[70px]">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:flex gap-x-6 justify-between mt-6 sm:mt-0">
+      <div class="flex-1 max-w-[300px]">
+        <h6 class="text-[20px] font-semibold">
+          Company Name
+        </h6>
+        <p class="mt-4 text-sm sm:text-base">
+          A CBT preparation solution for professional exams and tests, with over 25+ years past questions to choose from.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 mt-10">
+          <button class="btn bg-white text-primary">
+            Sign up
+          </button>
+          <button class="btn btn-outline text-white border-white bg-primary">
+            Login
+          </button>
+        </div>
+      </div>
+      <nav class="flex-1 flex justify-center pr-5 sm:pr-0">
+        <ul class="flex flex-col gap-6 sm:text-[20px] text-white font-semibold py-8">
+          <li><a href="">About Us</a></li>
+          <li><a href="">Contact Us</a></li>
+          <li><a href="">Help</a></li>
+        </ul>
+      </nav>
+      <div class="col-span-2 lg:flex-[1.5]">
+        <form class="mt-10 lg:mt-0 max-w-[450px] mx-auto flex flex-col items-end w-full">
+          <label for="subscribe" class="text-[20px] font-semibold">
+            Subscribe to our news
+          </label>
+          <div class="w-full flex p-1 rounded-[15px] mt-6 bg-white">
+            <input
+              type="email"
+              name="email"
+              id="subscribe"
+              placeholder="Enter your E-mail address"
+              class="text-sm sm:text-base pl-4 py-2 sm:px-7 sm:py-5 flex-auto outline-none text-primary font-semibold placeholder:text-primary placeholder:font-semibold"
+            >
+            <button class="btn w-max bg-primary text-white rounded-tl-none px-4 sm:px-[30px]">
+              Subscribe
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <span class="block text-center font-semibold mt-14">
+      2023 Online Exam CBT. All rights reserved.
+    </span>
+  </footer>
+</body>
+</html>

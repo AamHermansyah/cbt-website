@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verification account page</title>
+  <link rel="stylesheet" href="dist/output.css">
+</head>
+<body>
+  <!-- Verification account page -->
+  <section id="signup" class="container-layout py-[50px]">
+    <div>
+      <a href="/signup.html" class="mb-10 md:mb-0 inline-block">
+        <img
+          src="/public/icons/arrow-narrow-left.svg"
+          alt="arrow-back"
+          class="w-[30px] aspect-square object-contain"
+        >
+      </a>
+    </div>
+    <div class="flex">
+      <div class="hidden md:block flex-1 self-center">
+        <img
+          src="/public/images/online-test.png"
+          alt="online-test"
+          class="w-full object-contain"
+        >
+      </div>
+      <div class="flex-1 md:px-10">   
+        <h2 class="text-2xl font-medium text-primary">Account Verification</h2>  
+        <form class="mt-4">     
+          <p class="text-sm font-medium">
+            Please enter the OTP Code sent to <b>XYZ@example.com</b>
+          </p>
+          <div class="mb-10 mt-6">
+            <label for="otp" class="block text-neutral-n100 mb-4 text-sm font-medium">
+              OTP Code
+            </label>
+            <input
+              type="text"
+              id="otp"
+              name="otp"
+              class="border border-neutral-n100 text-neutral rounded-[15px] focus:ring-primary valid:focus:outline-primary focus:border-primary w-full py-[18px] px-[30px] font-medium placeholder:text-neutral placeholder:font-medium invalid:border-danger-d75 invalid:outline-danger-d200 peer"
+              placeholder="Enter OTP Code"
+              required
+              pattern="\d+"
+            >
+            <p class="hidden peer-invalid:block text-danger-d200 mt-4">
+              Wrong OTP Code
+            </p>
+          </div>
+
+          <button class="btn sm:text-[20px] bg-primary text-white mt-6 w-full">
+            Login
+          </button>
+          <p class="py-4 text-center">
+            Din't receive a code? <a href="" class="text-primary font-semibold">Resend Code</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="container-layout">
+    <span>Copyright</span>
+    <nav class="inline-block ml-4">
+      <ul class="flex gap-4">
+        <li><a href="">Terms & Conditions</a></li>
+        <li><a href="">Privacy Policy</a></li>
+        <li><a href="">Help</a></li>
+      </ul>
+    </nav>
+  </footer>  
+</body>
+</html>
