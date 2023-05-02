@@ -17,3 +17,4 @@
 13. [Subscriptions](https://aamhermansyah.github.io/cbt-website/subscriptions.html)
 14. [Recent Transactions](https://aamhermansyah.github.io/cbt-website/recent-transactions.html)
 15. `Clear all revisions in` [Landing page](https://aamhermansyah.github.io/cbt-website/)
+16. [Dashboard](https://aamhermansyah.github.io/cbt-website/dashboard.html)
