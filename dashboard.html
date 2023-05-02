@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body>
+  <!-- navbar -->
+  <header class="container-layout border border-neutral rounded-b-[15px] p-0">
+    <section class="py-5 px-4 sm:px-10">
+      <div class="flex items-center gap-4 sm:gap-8 justify-between">
+        <div class="max-w-[500px] flex-1 flex font-medium border border-primary-b100 text-primary px-[18px] rounded-xl">              
+          <label for="search" class="flex-center cursor-pointer">
+            <img
+              src="./public/icons/ri-search-line.svg"
+              alt="search-icon"
+              class="w-full aspect-square object-fill"
+            >
+          </label>
+          <input
+            type="text"
+            id="search"
+            class="py-[14px] pl-2 text-sm w-full placeholder:text-primary placeholder:font-medium outline-none"
+            placeholder="Search for Test, Assessment..."
+            required
+          >
+        </div>
+        <div class="md:flex-[1.3] flex justify-end items-center gap-2 md:pr-4">
+          <div class="cursor-pointer">
+            <img
+              src="./public/icons/clarity-bell-line.svg"
+              alt="search-icon"
+              class="w-[90%] sm:w-full aspect-square object-fill"
+            >
+          </div>
+          <div class="lg:hidden cursor-pointer">
+            <img
+              id="nav-hamburger"
+              src="./public/icons/menu.svg"
+              alt="search-icon"
+              class="w-full aspect-square object-fill"
+            >
+            <img
+              id="nav-hamburger-close"
+              src="./public/icons/x.svg"
+              alt="search-icon"
+              class="w-full aspect-square object-fill"
+              style="display: none;"
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <!-- sidebar -->
+  <div class="container-layout mt-5 flex p-0">
+    <aside
+      id="aside"
+      class="-translate-x-[100%] lg:translate-x-0 fixed top-0 left-0 lg:static w-[240px] max-h-[900px] z-10 bg-white flex flex-col justify-between border border-neutral rounded-tr-[15px] py-[31px] transition-transform duration-200 ease-out shadow-xl shadow-neutral-n100 md:shadow-none"
+    >
+      <div>
+        <div class="flex flex-wrap gap-[10px] pl-6 pr-3">
+          <img
+            src="./public/images/user-example.png"
+            alt="search-icon"
+            class="w-10 aspect-square object-contain rounded-md"
+          >
+          <div>
+            <h3 class="text-sm font-medium">Darlene Robertson</h3>
+            <h6 class="text-[12px] line-clamp-1">XYZ@example.commm</h6>
+          </div>
+        </div>
+        <nav class="mt-[35px]">
+          <div class="flex flex-col gap-2 text-neutral">
+            <a href="/cbt-website/dashboard.html" class="flex gap-[18px] items-center bg-primary-b50 text-primary py-3 pl-6 pr-3">
+              <span class="w-5 aspect-square">
+                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10 2.16675C14.6025 2.16675 18.3334 5.89758 18.3334 10.5001C18.3334 15.1026 14.6025 18.8334 10 18.8334C5.39752 18.8334 1.66669 15.1026 1.66669 10.5001C1.66669 5.89758 5.39752 2.16675 10 2.16675ZM10 4.66675C8.86213 4.66666 7.74907 4.99937 6.79789 5.6239C5.84671 6.24844 5.09896 7.13753 4.64672 8.18169C4.19448 9.22584 4.0575 10.3795 4.25264 11.5005C4.44779 12.6215 4.96654 13.661 5.74502 14.4909L5.87502 14.6242L7.05335 13.4467C6.4042 12.7982 5.98729 11.9535 5.86734 11.0438C5.7474 10.134 5.93111 9.21012 6.38999 8.41548C6.84886 7.62084 7.55721 6.9999 8.4051 6.64904C9.25299 6.29818 10.193 6.23703 11.0792 6.47508L12.3817 5.17341C11.6324 4.83863 10.8207 4.66597 10 4.66675ZM15.3267 8.11925L14.0259 9.42091C14.1175 9.76508 14.1667 10.1267 14.1667 10.5001C14.1667 11.6501 13.7 12.6917 12.9467 13.4467L14.125 14.6251C14.6673 14.0839 15.0974 13.4408 15.3906 12.733C15.6838 12.0251 15.8342 11.2663 15.8334 10.5001C15.8346 9.67958 15.662 8.86813 15.3267 8.11925ZM13.535 5.78591L10.4309 8.88925C10.1839 8.82351 9.92514 8.81538 9.67454 8.86549C9.42395 8.9156 9.18821 9.02262 8.98553 9.17827C8.78284 9.33393 8.61863 9.53407 8.50555 9.76325C8.39248 9.99243 8.33356 10.2445 8.33335 10.5001C8.33379 10.737 8.38475 10.9712 8.48283 11.1869C8.58091 11.4026 8.72386 11.5949 8.90214 11.751C9.08042 11.9071 9.28993 12.0234 9.51671 12.0921C9.74348 12.1608 9.9823 12.1803 10.2172 12.1495C10.4522 12.1186 10.6778 12.038 10.8791 11.913C11.0804 11.788 11.2528 11.6215 11.3847 11.4246C11.5166 11.2278 11.6049 11.0051 11.644 10.7713C11.683 10.5376 11.6717 10.2983 11.6109 10.0692L14.7142 6.96425L13.535 5.78591Z" fill="#243757"/>
+                </svg>                                 
+              </span>
+              <span class="font-semibold">Dashboard</span>
+            </a>
+            <a href="/cbt-website/assessment.html" class="flex gap-[18px] items-center py-3 pl-6 pr-3">
+              <img
+                src="./public/icons/ic-baseline-assessment.svg"
+                alt="search-icon"
+                class="w-5 aspect-square object-fill"
+              >
+              <span class="font-semibold">Assessment</span>
+            </a>
+            <a href="/cbt-website/profile.html" class="flex gap-[18px] items-center py-3 pl-6 pr-3">
+              <img
+                src="./public/icons/mdi-user.svg"
+                alt="search-icon"
+                class="w-5 aspect-square object-fill"
+              >
+              <span class="font-semibold">My Profile</span>
+            </a>
+            <a href="/cbt-website/payments.html" class="flex gap-[18px] items-center py-3 pl-6 pr-3">
+              <img
+                src="./public/icons/bxs-coin-stack.svg"
+                alt="search-icon"
+                class="w-5 aspect-square object-fill"
+              >
+              <span class="font-semibold">Payments</span>
+            </a>
+          </div>
+        </nav>
+      </div>
+      <div class="flex gap-[18px] items-center py-3 pl-6 pr-3 mt-[70px]">
+        <img
+          src="./public/icons/sign-out.svg"
+          alt="search-icon"
+          class="w-5 aspect-square object-fill"
+        >
+        <a href="" class="block font-semibold text-danger-d200">
+          Logout
+        </a>
+      </div>
+    </aside>
+
+    <div class="p-2 sm:px-[26px] flex-auto">
+      <!-- Summary -->
+      <section id="summary">
+        <h2 class="text-xl sm:text-2xl font-semibold text-neutral-n400 px-2 sm:px-0">
+          Good Afternoon, Darlene
+        </h2>
+
+        <div class="grid gap-5 sm:gap-[30px] grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 py-[6px] mt-4">
+          <div class="flex items-center justify-between gap-2 border-[0.5px] border-neutral px-[19px] py-[14px] rounded-[15px]">
+            <div>
+              <h2 class="text-sm text-neutral-n100 font-medium">
+                Total Test Taken
+              </h2>
+              <h4 class="text-4xl font-semibold text-primary mt-4">
+                226
+              </h4>
+            </div>
+            <div class="flex-center w-[60px] aspect-square bg-primary-b50 rounded-full">
+              <img
+                src="./public/icons/ioutline-book.svg"
+                alt="book-icon"
+                class="w-[30px] aspect-square"
+              >
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between gap-2 border-[0.5px] border-neutral px-[19px] py-[14px] rounded-[15px]">
+            <div>
+              <h2 class="text-sm text-neutral-n100 font-medium">
+                Total Test Passed
+              </h2>
+              <h4 class="text-4xl font-semibold text-primary mt-4">
+                169
+              </h4>
+            </div>
+            <div class="flex-center w-[60px] aspect-square bg-primary-b50 rounded-full">
+              <img
+                src="./public/icons/passed-check.svg"
+                alt="passed-test-icon"
+                class="w-[30px] aspect-square"
+              >
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between gap-2 border-[0.5px] border-neutral px-[19px] py-[14px] rounded-[15px]">
+            <div>
+              <h2 class="text-sm text-neutral-n100 font-medium">
+                Total Test Failed
+              </h2>
+              <h4 class="text-4xl font-semibold text-primary mt-4">
+                169
+              </h4>
+            </div>
+            <div class="flex-center w-[60px] aspect-square bg-primary-b50 rounded-full">
+              <img
+                src="./public/icons/x-bold.svg"
+                alt="failed-test-icon"
+                class="w-[30px] aspect-square"
+              >
+            </div>
+          </div>
+
+          <div class="flex items-center justify-between gap-2 border-[0.5px] border-neutral px-[19px] py-[14px] rounded-[15px]">
+            <div>
+              <h2 class="text-sm text-neutral-n100 font-medium">
+                Average Performance
+              </h2>
+              <h4 class="text-4xl font-semibold text-primary mt-4">
+                74.2%
+              </h4>
+            </div>
+            <div class="flex-center w-[60px] aspect-square bg-primary-b50 rounded-full">
+              <img
+                src="./public/icons/chart-square-bar.svg"
+                alt="failed-test-icon"
+                class="w-[30px] aspect-square"
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Chart -->
+      <main id="chart" class="mt-10">
+        <div
+          class="px-4 md:p-7 pb-14 md:pb-20 border border-neutral-n50 rounded-[15px]"
+          style="box-shadow: 0px 0.9375px 7.5px rgba(0, 0, 0, 0.25);"
+        >
+        <!-- Header chart -->
+          <div class="flex items-end justify-between border-b border-neutral-n60 sm:px-4 md:px-[31px] py-[15px]">
+            <h4 class="font-semibold text-neutral-n400">
+              My Performance Chart
+            </h4>
+            <div class="flex gap-2 sm:gap-5 text-sm">
+              <button class="text-xs sm:text-sm font-semibold bg-primary text-white rounded-[7px] p-2">
+                Monthly
+              </button>
+              <button class="text-xs sm:text-sm font-semibold border border-neutral-n100 text-neutral-n100 rounded-[7px] p-2">
+                Weekly
+              </button>
+              <button class="text-xs sm:text-sm font-semibold border border-neutral-n100 text-neutral-n100 rounded-[7px] p-2">
+                Today
+              </button>
+            </div>
+          </div>
+
+          <div class="mt-5">
+            <!-- Legend -->
+            <div class="w-full flex justify-center gap-6 sm:gap-[47px]">
+              <div class="flex gap-3 items-center">
+                <span class="w-[35px] h-[11px] rounded-full bg-primary"></span>
+                <span class="text-sm sm:text-base font-medium">Passed</span>
+              </div>
+              <div class="flex gap-3 items-center">
+                <span class="w-[35px] h-[11px] rounded-full bg-danger"></span>
+                <span class="text-sm sm:text-base font-medium">Failed</span>
+              </div>
+            </div>
+
+            <!-- Body -->
+            <div class="flex mt-4">
+              <!-- Label Y -->
+              <div class="flex gap-10 sm:gap-[60px] flex-col items-end text-xs sm:text-[15px] font-semibold pr-4 sm:pr-8 sm:pl-8 text-neutral-n400">
+                <span>100%</span>
+                <span>75%</span>
+                <span>50%</span>
+                <span>25%</span>
+                <span>0%</span>
+              </div>
+              <!-- Main -->
+              <div class="w-full md:flex-auto">
+                <div class="min-h-full grid grid-cols-7">
+                  <div class="min-h-full">
+                    <div class="h-full flex items-end gap-2 sm:gap-[14px] py-2 mb-2 sm:mb-4">
+                      <span class="block bg-primary w-[12px] sm:w-[15px] h-[90%] rounded-full"></span>
+                      <span class="block bg-danger w-[12px] sm:w-[15px] h-[46%] rounded-full"></span>
+                    </div>
+                    <span class="text-xs md:text-[15px] font-semibold text-neutral-n400">
+                      May
+                    </span>
+                  </div>
+
+                  <div class="h-full">
+                    <div class="h-full flex items-end gap-2 sm:gap-[14px] py-2 mb-2 sm:mb-4">
+                      <span class="block bg-primary w-[12px] sm:w-[15px] h-[63%] rounded-full"></span>
+                      <span class="block bg-danger w-[12px] sm:w-[15px] h-[32%] rounded-full"></span>
+                    </div>
+                    <span class="text-xs md:text-[15px] font-semibold text-neutral-n400">
+                      June
+                    </span>
+                  </div>
+
+                  <div class="h-full">
+                    <div class="h-full flex items-end gap-2 sm:gap-[14px] py-2 mb-2 sm:mb-4">
+                      <span class="block bg-primary w-[12px] sm:w-[15px] h-[15%] rounded-full"></span>
+                      <span class="block bg-danger w-[12px] sm:w-[15px] h-[55%] rounded-full"></span>
+                    </div>
+                    <span class="text-xs md:text-[15px] font-semibold text-neutral-n400">
+                      July
+                    </span>
+                  </div>
+
+                  <div class="h-full">
+                    <div class="h-full flex items-end gap-2 sm:gap-[14px] py-2 mb-2 sm:mb-4">
+                      <span class="block bg-primary w-[12px] sm:w-[15px] h-[80%] rounded-full"></span>
+                      <span class="block bg-danger w-[12px] sm:w-[15px] h-[65%] rounded-full"></span>
+                    </div>
+                    <span class="text-xs md:text-[15px] font-semibold text-neutral-n400">
+                      Aug
+                    </span>
+                  </div>
+
+                  <div class="h-full">
+                    <div class="h-full flex items-end gap-2 sm:gap-[14px] py-2 mb-2 sm:mb-4">
+                      <span class="block bg-primary w-[12px] sm:w-[15px] h-[20%] rounded-full"></span>
+                      <span class="block bg-danger w-[12px] sm:w-[15px] h-[95%] rounded-full"></span>
+                    </div>
+                    <span class="text-xs md:text-[15px] font-semibold text-neutral-n400">
+                      Sept
+                    </span>
+                  </div>
+                  
+                  <div class="h-full">
+                    <div class="h-full flex items-end gap-2 sm:gap-[14px] py-2 mb-2 sm:mb-4">
+                      <span class="block bg-primary w-[12px] sm:w-[15px] h-[45%] rounded-full"></span>
+                      <span class="block bg-danger w-[12px] sm:w-[15px] h-[55%] rounded-full"></span>
+                    </div>
+                    <span class="text-xs md:text-[15px] font-semibold text-neutral-n400">
+                      Oct
+                    </span>
+                  </div>
+                  <div class="h-full">
+                    <div class="h-full flex items-end gap-2 sm:gap-[14px] py-2 mb-2 sm:mb-4">
+                      <span class="block bg-primary w-[12px] sm:w-[15px] h-[10%] rounded-full"></span>
+                      <span class="block bg-danger w-[12px] sm:w-[15px] h-[75%] rounded-full"></span>
+                    </div>
+                    <span class="text-xs md:text-[15px] font-semibold text-neutral-n400">
+                      Nov
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <section id="top-topics" class="my-8 grid gap-8 grid-cols-1 md:grid-cols-2">
+        <div
+          class="p-6 pb-10 border border-neutral-n50 rounded-[15px]"
+          style="box-shadow: 0px 0.9375px 7.5px rgba(0, 0, 0, 0.25);"
+        >
+          <h4 class="text-sm font-semibold">
+            Strongest Topic
+          </h4>
+          <div class="mt-[25px]">
+            <div class="flex gap-[45px] items-end justify-between">
+              <div class="flex-[3.5]">
+                <span class="text-sm font-semibold text-neutral-n400">
+                  Data science
+                </span>
+                <div class="w-full h-[10px] mt-2 rounded-full bg-primary-b50">
+                  <span class="block h-full w-[74%] rounded-full bg-primary"></span>
+                </div>
+              </div>
+              <div class="flex-1">
+                <h6 class="text-sm text-neutral-n100 font-semibold">
+                  <span class="text-neutral-n400">74%</span> Correct
+                </h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-[25px]">
+            <div class="flex gap-[45px] items-end justify-between">
+              <div class="flex-[3.5]">
+                <span class="text-sm font-semibold text-neutral-n400">
+                  Cyber Security Basics
+                </span>
+                <div class="w-full h-[10px] mt-2 rounded-full bg-primary-b50">
+                  <span class="block h-full w-[43%] rounded-full bg-primary"></span>
+                </div>
+              </div>
+              <div class="flex-1">
+                <h6 class="text-sm text-neutral-n100 font-semibold">
+                  <span class="text-neutral-n400">43%</span> Correct
+                </h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-[25px]">
+            <div class="flex gap-[45px] items-end justify-between">
+              <div class="flex-[3.5]">
+                <span class="text-sm font-semibold text-neutral-n400">
+                  Book-Keeping
+                </span>
+                <div class="w-full h-[10px] mt-2 rounded-full bg-primary-b50">
+                  <span class="block h-full w-[36%] rounded-full bg-primary"></span>
+                </div>
+              </div>
+              <div class="flex-1">
+                <h6 class="text-sm text-neutral-n100 font-semibold">
+                  <span class="text-neutral-n400">36%</span> Correct
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="p-6 pb-10 border border-neutral-n50 rounded-[15px]"
+          style="box-shadow: 0px 0.9375px 7.5px rgba(0, 0, 0, 0.25);"
+        >
+          <h4 class="text-sm font-semibold">
+            Strongest Topic
+          </h4>
+          <div class="mt-[25px]">
+            <div class="flex gap-[45px] items-end justify-between">
+              <div class="flex-[3.5]">
+                <span class="text-sm font-semibold text-neutral-n400">
+                  Family Law
+                </span>
+                <div class="w-full h-[10px] mt-2 rounded-full bg-primary-b50">
+                  <span class="block h-full w-[74%] rounded-full bg-danger"></span>
+                </div>
+              </div>
+              <div class="flex-1">
+                <h6 class="text-sm text-neutral-n100 font-semibold">
+                  <span class="text-neutral-n400">74%</span> Correct
+                </h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-[25px]">
+            <div class="flex gap-[45px] items-end justify-between">
+              <div class="flex-[3.5]">
+                <span class="text-sm font-semibold text-neutral-n400">
+                  Financial Accounting
+                </span>
+                <div class="w-full h-[10px] mt-2 rounded-full bg-primary-b50">
+                  <span class="block h-full w-[43%] rounded-full bg-danger"></span>
+                </div>
+              </div>
+              <div class="flex-1">
+                <h6 class="text-sm text-neutral-n100 font-semibold">
+                  <span class="text-neutral-n400">43%</span> Correct
+                </h6>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-[25px]">
+            <div class="flex gap-[45px] items-end justify-between">
+              <div class="flex-[3.5]">
+                <span class="text-sm font-semibold text-neutral-n400">
+                  Company Networking
+                </span>
+                <div class="w-full h-[10px] mt-2 rounded-full bg-primary-b50">
+                  <span class="block h-full w-[36%] rounded-full bg-danger"></span>
+                </div>
+              </div>
+              <div class="flex-1">
+                <h6 class="text-sm text-neutral-n100 font-semibold">
+                  <span class="text-neutral-n400">36%</span> Correct
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    const asideElement = document.getElementById('aside');
+    const btnNavHamb = document.getElementById('nav-hamburger');
+    btnNavHamb.addEventListener('click', () => {
+      btnNavHamb.style.display = 'none';
+      btnNavHamb.nextElementSibling.style.display = 'block';
+      asideElement.classList.add('translate-x-0');
+    });
+
+    const btnNavClose = document.getElementById('nav-hamburger-close');
+    btnNavClose.addEventListener('click', () => {
+      btnNavClose.style.display = 'none';
+      btnNavClose.previousElementSibling.style.display = 'block';
+      asideElement.classList.remove('translate-x-0');
+      asideElement.classList.add('-translate-x-[100%]');
+    });
+  </script>
+</body>
+</html>
