@@ -7,5 +7,4 @@
 6. [Reset password](https://aamhermansyah.github.io/cbt-website/reset-password.html)
 7. [Account verification](https://aamhermansyah.github.io/cbt-website/account-verification.html)
 8. [Assessment](https://aamhermansyah.github.io/cbt-website/assessment.html)
-4. [Assessment enrolled](https://aamhermansyah.github.io/cbt-website/assessment-enrolled.html)
-4. [Profile](https://aamhermansyah.github.io/cbt-website/profile.html)
+9. [Assessment enrolled](https://aamhermansyah.github.io/cbt-website/assessment-enrolled.html)
