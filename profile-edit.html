@@ -123,8 +123,8 @@
       </div>
     </aside>
 
-    <!-- Profile -->
-    <section id="profile" class="p-2 sm:px-[26px] flex-auto">
+    <!-- Form edit profile -->
+    <section id="profile-edit" class="p-2 sm:px-[26px] flex-auto">
       <div class="px-4 sm:px-8 md:px-[54px] py-[70px] border border-neutral rounded-[15px] shadow-md shadow-neutral-n300">
         <div class="text-center">
           <div class="mx-auto w-[100px] sm:w-[150px] aspect-square rounded-[15px] overflow-hidden bg-neutral-n50">
@@ -148,9 +148,16 @@
               id="fullname"
               value="Darlene Robertson"
               class="flex-auto outline-none px-4"
-              readonly
             >
+            <label for="fullname" class="flex-center cursor-pointer">
+              <img
+                src="./public/icons/pencil.svg"
+                alt="pencil"
+                class="w-[90%] aspect-square object-fill"
+              >
+            </label>
           </div>
+
           <div class="flex items-end text-sm sm:text-[18px] border-b-[1px] border-neutral-n40 pb-1 pt-2 mb-10">
             <label for="email" class="font-medium w-max">Email Address:</label>
             <input
@@ -159,9 +166,16 @@
               id="email"
               value="XYZ@example.com"
               class="flex-auto outline-none px-4"
-              readonly
             >
+            <label for="email" class="flex-center cursor-pointer">
+              <img
+                src="./public/icons/pencil.svg"
+                alt="pencil"
+                class="w-[90%] aspect-square object-fill"
+              >
+            </label>
           </div>
+
           <div class="flex items-end text-sm sm:text-[18px] border-b-[1px] border-neutral-n40 pb-1 pt-2 mb-10">
             <label for="phone" class="font-medium w-max">Phone Number:</label>
             <input
@@ -170,13 +184,19 @@
               id="phone"
               value="+234 802 095 5014"
               class="flex-auto outline-none px-4"
-              readonly
             >
+            <label for="phone" class="flex-center cursor-pointer">
+              <img
+                src="./public/icons/pencil.svg"
+                alt="pencil"
+                class="w-[90%] aspect-square object-fill"
+              >
+            </label>
           </div>
 
           <div class="flex flex-auto items-end text-sm sm:text-[18px] border-b-[1px] border-neutral-n40 pb-1 pt-2 mb-2">
             <label for="country" class="font-medium">Country:</label>
-            <div class="w-full flex text-neutral px-4 rounded-[15px]">
+            <div class="w-full flex text-neutral pl-4 pr-3 rounded-[15px]">
               <input
                 type="tel"
                 id="country"
@@ -185,25 +205,60 @@
                 required
                 readonly
               >
-              <div class="flex-center">
+              <div class="relative flex-center cursor-pointer group">
                 <div class="flex gap-2">
                   <img
                     src="./public/icons/flag-for-nigeria.svg"
                     alt="phone-code-1"
                     class="w-full aspect-square object-cover"
-                  >                 
-                </div>                
+                  >
+                  <img
+                    src="./public/icons/chevron-down.svg"
+                    alt="phone-code-1"
+                    class="w-full aspect-square object-cover"
+                  >
+                </div>
+                <div class="hidden group-hover:block z-10 absolute -left-10 top-[25px] w-[100px] bg-white divide-y divide-neutral-n100 rounded-lg shadow">
+                  <ul class="max-h-[200px] overflow-auto py-2 text-sm text-gray-700" aria-labelledby="dropdown-button">
+                    <li class="flex items-center gap-2 px-4 py-2 hover:bg-neutral-n30">
+                      <img
+                        src="./public/icons/flag-for-nigeria.svg"
+                        alt="phone-code-1"
+                        class="w-[25px] aspect-square object-cover"
+                      >
+                    <span>+62</span>
+                    </li>
+                    <li class="flex items-center gap-2 px-4 py-2 hover:bg-neutral-n30">
+                      <img
+                        src="./public/icons/flag-for-nigeria.svg"
+                        alt="phone-code-1"
+                        class="w-[25px] aspect-square object-cover"
+                      >
+                      <span>+112</span>
+                    </li>
+                    <li class="flex items-center gap-2 px-4 py-2 hover:bg-neutral-n30">
+                      <img
+                        src="./public/icons/flag-for-nigeria.svg"
+                        alt="phone-code-1"
+                        class="w-[25px] aspect-square object-cover"
+                      >
+                      <span>+351</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
 
           <div class="flex flex-col">
-            <button type="button" class="w-max text-sm block text-primary font-semibold">
-              Change Password
-            </button>
-            <a href="/cbt-website/profile-edit.html" class="w-max self-end font-semibold btn py-3 px-5 bg-primary text-white rounded-lg mt-20">
-              Edit Profile
-            </a>
+            <div class="mt-20 self-end">
+              <button type="button" class="w-max font-semibold btn py-3 px-5 text-primary">
+                Cancel
+              </button>
+              <a href="/cbt-website/profile.html" class="w-max font-semibold btn py-3 px-5 bg-primary text-white rounded-lg">
+                Done
+              </a>
+            </div>
           </div>
         </form>
       </div>

@@ -36,7 +36,7 @@
               class="w-[90%] sm:w-full aspect-square object-fill"
             >
           </div>
-          <div class="md:hidden cursor-pointer">
+          <div class="lg:hidden cursor-pointer">
             <img
               id="nav-hamburger"
               src="./public/icons/menu.svg"
@@ -60,7 +60,7 @@
   <div class="container-layout mt-5 flex p-0">
     <aside
       id="aside"
-      class="-translate-x-[100%] md:translate-x-0 fixed top-0 left-0 lg:static w-[240px] max-h-[900px] z-10 bg-white flex flex-col justify-between border border-neutral rounded-tr-[15px] py-[31px] transition-transform duration-200 ease-out shadow-xl shadow-neutral-n100 md:shadow-none"
+      class="-translate-x-[100%] lg:translate-x-0 fixed top-0 left-0 lg:static w-[240px] max-h-[900px] z-10 bg-white flex flex-col justify-between border border-neutral rounded-tr-[15px] py-[31px] transition-transform duration-200 ease-out shadow-xl shadow-neutral-n100 md:shadow-none"
     >
       <div>
         <div class="flex flex-wrap gap-[10px] pl-6 pr-3">
@@ -75,40 +75,40 @@
           </div>
         </div>
         <nav class="mt-[35px]">
-          <ul class="flex flex-col gap-2 text-neutral">
-            <li class="flex gap-[18px] items-center py-3 pl-6 pr-3">
+          <div class="flex flex-col gap-2 text-neutral">
+            <a href="" class="flex gap-[18px] items-center py-3 pl-6 pr-3">
               <img
                 src="./public/icons/ri-dashboard-2-fill.svg"
                 alt="search-icon"
                 class="w-5 aspect-square object-fill"
               >
-              <a href="" class="block font-semibold">Dashboard</a>
-            </li>
-            <li class="flex gap-[18px] items-center py-3 pl-6 pr-3 bg-primary-b50 text-primary">
-              <img
-                src="./public/icons/ic-baseline-assessment.svg"
-                alt="search-icon"
-                class="w-5 aspect-square object-fill"
-              >
-              <a href="" class="block font-semibold">Assessment</a>
-            </li>
-            <li class="flex gap-[18px] items-center py-3 pl-6 pr-3">
+              <span class="font-semibold">Dashboard</span>
+            </a>
+            <a href="/cbt-website/assessment.html" class="flex gap-[18px] items-center py-3 pl-6 pr-3 bg-primary-b50 text-primary">
+              <span class="w-5 aspect-square">
+                <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.8333 3H4.16667C3.25 3 2.5 3.75 2.5 4.66667V16.3333C2.5 17.25 3.25 18 4.16667 18H15.8333C16.75 18 17.5 17.25 17.5 16.3333V4.66667C17.5 3.75 16.75 3 15.8333 3ZM7.5 14.6667H5.83333V8.83333H7.5V14.6667ZM10.8333 14.6667H9.16667V6.33333H10.8333V14.6667ZM14.1667 14.6667H12.5V11.3333H14.1667V14.6667Z" fill="#413DE5"/>
+                </svg>                  
+              </span>
+              <span class="font-semibold">Assessment</span>
+            </a>
+            <a href="/cbt-website/profile.html" class="flex gap-[18px] items-center py-3 pl-6 pr-3">
               <img
                 src="./public/icons/mdi-user.svg"
                 alt="search-icon"
                 class="w-5 aspect-square object-fill"
               >
-              <a href="/cbt-website/profile.html" class="block font-semibold">My Profile</a>
-            </li>
-            <li class="flex gap-[18px] items-center py-3 pl-6 pr-3">
+              <span class="font-semibold">My Profile</span>
+            </a>
+            <a href="/cbt-website/payments.html" class="flex gap-[18px] items-center py-3 pl-6 pr-3">
               <img
                 src="./public/icons/bxs-coin-stack.svg"
                 alt="search-icon"
                 class="w-5 aspect-square object-fill"
               >
-              <a href="" class="block font-semibold">Payments</a>
-            </li>
-          </ul>
+              <span class="font-semibold">Payments</span>
+            </a>
+          </div>
         </nav>
       </div>
       <div class="flex gap-[18px] items-center py-3 pl-6 pr-3 mt-[70px]">
@@ -123,7 +123,8 @@
       </div>
     </aside>
 
-    <div class="px-[26px] flex-auto">
+    <!-- Assessment enrolled -->
+    <section id="assessment" class="px-[26px] flex-auto">
       <div>
         <a href="/cbt-website/assessment.html" class="btn btn-outline py-3 px-5 border-neutral-n40 text-neutral-n100 rounded-lg shadow-md">
           All
@@ -133,7 +134,7 @@
         </a>
       </div>
       
-      <div class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[20px] mt-[26px]">
+      <main class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[20px] mt-[26px]">
         <div class="flex flex-col justify-between border border-neutral rounded-[16px] px-4 py-[22px] shadow-md shadow-neutral-n40">
           <div class="flex items-center gap-4">
             <div class="w-[54px] aspect-square p-4 bg-primary-b50 rounded-full overflow-hidden">
@@ -237,14 +238,14 @@
             </button>
           </div>
         </div>
-      </div>
+      </main>
 
       <div class="text-center my-2">
         <button class="w-max px-4 py-2  text-primary font-semibold mx-auto">
           Show all
         </button>
       </div>
-    </div>
+    </section>
   </div>
 
   <script>
