@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instructions - Fresh Test</title>
+  <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body>
+  <!-- navbar -->
+  <header class="container-layout border border-neutral rounded-b-[15px] p-0">
+    <section class="py-5 px-4 sm:px-10">
+      <div class="flex items-center gap-4 sm:gap-8 justify-between">
+        <div class="max-w-[500px] flex-1 flex font-medium border border-primary-b100 text-primary px-[18px] rounded-xl">              
+          <label for="search" class="flex-center cursor-pointer">
+            <img
+              src="./public/icons/ri-search-line.svg"
+              alt="search-icon"
+              class="w-full aspect-square object-fill"
+            >
+          </label>
+          <input
+            type="text"
+            id="search"
+            class="py-[14px] pl-2 text-sm w-full placeholder:text-primary placeholder:font-medium outline-none"
+            placeholder="Search for Test, Assessment..."
+            required
+          >
+        </div>
+        <div class="md:flex-[1.3] flex justify-end items-center gap-2 md:pr-4">
+          <a href="/cbt-website/notifications.html" class="cursor-pointer">
+            <img
+              src="./public/icons/clarity-bell-line.svg"
+              alt="notifications-icon"
+              class="w-[90%] sm:w-full aspect-square object-fill"
+            >
+          </a>
+        </div>
+      </div>
+    </section>
+  </header>
+
+  <!-- Instructions Fresh Test -->
+  <section id="instructions" class="container-layout p-0">
+    <div
+      class="px-4 sm:px-10 lg:px-[70px] pt-[34px] border border-neutral-n50 rounded-t-[15px] mt-5"
+      style="box-shadow: 0px 0.9375px 7.5px rgba(0, 0, 0, 0.25);"
+    >
+      <div>
+        <div>
+          <p class="text-sm sm:text-base text-right font-semibold text-neutral-n100 mb-1">
+            Start today to achieve your goals!
+          </p>
+          <div class="w-full h-[5px] rounded-full bg-neutral-n40">
+            <span class="block w-[0%] h-full rounded-full bg-primary"></span>
+          </div>
+        </div>
+
+        <div class="text-center mt-[50px]">
+          <h3 class="text-primary text-xl sm:text-2xl font-semibold">
+            Test Instructions
+          </h3>
+          <p class="text-sm sm:text-base mt-2">
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. 
+          </p>
+        </div>
+      </div>
+
+      <!-- Steps -->
+      <div class="mt-[50px]">
+        <ul class="px-4 list-disc text-base md:text-xl pb-4 border-b-[4px] border-neutral-n30">
+          <li class="mb-2 md:mb-6">
+            Select your answer and click on “Next” button to proceed to the next question.
+          </li>
+          <li class="mb-2 md:mb-6">
+            Click “Previous” button to go back to the previous question.
+          </li>
+          <li class="mb-2 md:mb-6">
+            You can navigate to any question by clicking on the question number on the summary panel.
+          </li>
+          <li class="mb-2 md:mb-6">
+            Only the attempted questions will be submitted.
+          </li>
+          <li class="mb-2 md:mb-6">
+            Only click on the end button when you have confirmed you are done with this assessment.
+          </li>
+        </ul>
+      </div>
+
+      <!-- Subjects -->
+      <div class="mt-5 flex flex-wrap items-center gap-x-[10px] gap-y-6">
+        <div class="flex items-center gap-[10px]">
+          <div class="flex-center w-[60px] sm:w-[75px] aspect-square bg-primary-b50 rounded-full">
+            <img
+              src="./public/icons/accounting.svg"
+              alt="accounting-icon"
+              class="w-[25px] sm:w-[30px] aspect-square"
+            >
+          </div>
+          <span class="block text-xl sm:text-2xl text-neutral-n400 px-4 border-r-2 border-neutral-n400">
+            Accounting
+          </span>
+        </div>
+        <div>
+          <ul class="sm:ml-4 flex flex-wrap gap-x-8 gap-y-2 font-bold text-primary-b400">
+            <li>Taxation</li>
+            <li>Management Accounting</li>
+            <li>Financial accounting.</li>
+            <li>Auditing</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-[60px]">
+        <ul class="w-full flex flex-wrap gap-x-10 gap-y-3 sm:gap-y-6 font-medium md:text-lg lg:text-xl">
+          <li>
+            Number of Questions: 
+            <span class="text-primary">150</span>
+          </li>
+          <li>
+            Past of Questions: 
+            <span class="text-primary">All</span>
+          </li>
+          <li>
+            Test Questions: 
+            <span class="text-primary">1hr 30mins</span>
+          </li>
+          <li>
+            Question Type: 
+            <span class="text-primary">Mixed</span>
+          </li>
+          <li>
+            Assessment Type: 
+            <span class="text-primary">Flash Card</span>
+          </li>
+          <li>
+            Grouping: 
+            <span class="text-primary">Subjects by Questions</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="flex flex-col my-10">
+        <div class="self-end">
+          <button type="button" class="w-max font-semibold btn py-3 px-5 text-neutral-n100">
+            Cancel
+          </button>
+          <a href="" class="w-max font-semibold btn py-3 px-5 bg-primary text-white rounded-lg">
+            Start test
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
