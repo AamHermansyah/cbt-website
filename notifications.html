@@ -36,21 +36,6 @@
               class="w-[90%] sm:w-full aspect-square object-fill"
             >
           </a>
-          <div class="lg:hidden cursor-pointer">
-            <img
-              id="nav-hamburger"
-              src="./public/icons/menu.svg"
-              alt="nav-icon"
-              class="w-full aspect-square object-fill"
-            >
-            <img
-              id="nav-hamburger-close"
-              src="./public/icons/x.svg"
-              alt="nav-close-icon"
-              class="w-full aspect-square object-fill"
-              style="display: none;"
-            >
-          </div>
         </div>
       </div>
     </section>
@@ -263,23 +248,5 @@
       </ul>
     </main>
   </div>
-
-  <script>
-    const asideElement = document.getElementById('aside');
-    const btnNavHamb = document.getElementById('nav-hamburger');
-    btnNavHamb.addEventListener('click', () => {
-      btnNavHamb.style.display = 'none';
-      btnNavHamb.nextElementSibling.style.display = 'block';
-      asideElement.classList.add('translate-x-0');
-    });
-
-    const btnNavClose = document.getElementById('nav-hamburger-close');
-    btnNavClose.addEventListener('click', () => {
-      btnNavClose.style.display = 'none';
-      btnNavClose.previousElementSibling.style.display = 'block';
-      asideElement.classList.remove('translate-x-0');
-      asideElement.classList.add('-translate-x-[100%]');
-    });
-  </script>
 </body>
 </html>
