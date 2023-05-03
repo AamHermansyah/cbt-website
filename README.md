@@ -27,6 +27,8 @@
 
 #### 03 May 2023 - Side Menu (Completed)
 17. [Notifications page](https://aamhermansyah.github.io/cbt-website/notifications.html)
+
+#### 03 May 2023 - Assessment (Completed)
 18. [Select subject](https://aamhermansyah.github.io/cbt-website/select-subject.html)
 19. [Instructions (Fresh Test)](https://aamhermansyah.github.io/cbt-website/instructions.html)
 20. [Instructions (Resume Test)](https://aamhermansyah.github.io/cbt-website/instructions-resume.html)
