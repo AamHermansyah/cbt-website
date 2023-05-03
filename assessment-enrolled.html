@@ -259,11 +259,27 @@
 
     const btnNavClose = document.getElementById('nav-hamburger-close');
     btnNavClose.addEventListener('click', () => {
+      closeSidebar();
+    });
+
+    // close navbar in outside
+    window.addEventListener('click', (e) => {
+      if (
+          btnNavClose.style.display !== 'none' &&
+          e.target.closest('#aside') === null &&
+          e.target.closest('#nav-hamburger') === null
+        )
+      {
+        closeSidebar();
+      }
+    });
+
+    function closeSidebar() {
       btnNavClose.style.display = 'none';
       btnNavClose.previousElementSibling.style.display = 'block';
       asideElement.classList.remove('translate-x-0');
       asideElement.classList.add('-translate-x-[100%]');
-    });
+    }
   </script>
 </body>
 </html>
