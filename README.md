@@ -12,7 +12,7 @@
 
 #### 01 May 2023 - Side Menu
 8. [Assessment](https://aamhermansyah.github.io/cbt-website/assessment.html)
-9. [Assessment enrolled](https://aamhermansyah.github.io/cbt-website/assessment-enrolled.html)
+9. [Assessment (Enrolled)](https://aamhermansyah.github.io/cbt-website/assessment-enrolled.html)
 
 #### 02 May 2023 - Side Menu
 10. [Profile](https://aamhermansyah.github.io/cbt-website/profile.html)
@@ -27,3 +27,6 @@
 
 #### 03 May 2023 - Side Menu (Completed)
 17. [Notifications page](https://aamhermansyah.github.io/cbt-website/notifications.html)
+18. [Select subject](https://aamhermansyah.github.io/cbt-website/select-subject.html)
+19. [Instructions (Fresh Test)](https://aamhermansyah.github.io/cbt-website/instructions.html)
+20. [Instructions (Resume Test)](https://aamhermansyah.github.io/cbt-website/instructions-resume.html)
