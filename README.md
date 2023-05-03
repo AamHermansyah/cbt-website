@@ -1,5 +1,5 @@
 # Detail page
-#### 06 April 2023
+#### 01 May 2023
 1. [Landing page](https://aamhermansyah.github.io/cbt-website/)
 2. [About us](https://aamhermansyah.github.io/cbt-website/about-us.html)
 3. [Signup](https://aamhermansyah.github.io/cbt-website/signup.html)
@@ -10,7 +10,7 @@
 8. [Assessment](https://aamhermansyah.github.io/cbt-website/assessment.html)
 9. [Assessment enrolled](https://aamhermansyah.github.io/cbt-website/assessment-enrolled.html)
 
-#### 07 April 2023
+#### 02 May 2023
 10. [Profile](https://aamhermansyah.github.io/cbt-website/profile.html)
 11. [Edit profile](https://aamhermansyah.github.io/cbt-website/profile-edit.html)
 12. [Payments](https://aamhermansyah.github.io/cbt-website/payments.html)
@@ -18,3 +18,6 @@
 14. [Recent Transactions](https://aamhermansyah.github.io/cbt-website/recent-transactions.html)
 15. `Clear all revisions in` [Landing page](https://aamhermansyah.github.io/cbt-website/)
 16. [Dashboard](https://aamhermansyah.github.io/cbt-website/dashboard.html)
+
+#### 03 May 2023
+17. [Notifications page](https://aamhermansyah.github.io/cbt-website/notifications.html)
