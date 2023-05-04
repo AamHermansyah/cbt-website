@@ -22,7 +22,7 @@
 14. [Recent Transactions](https://aamhermansyah.github.io/cbt-website/recent-transactions.html)
 15. [Dashboard](https://aamhermansyah.github.io/cbt-website/dashboard.html)
 
-#### 02 May 2023 - Landing Page Revisions
+#### 02 May 2023 - Revisions
 16. `Clear all revisions in` [Landing page](https://aamhermansyah.github.io/cbt-website/)
 
 #### 03 May 2023 - Side Menu (Completed)
@@ -43,12 +43,15 @@
 27. [Result test (failed)](https://aamhermansyah.github.io/cbt-website/result-test-failed.html)
 
 #### 04 May 2023 - Popup in pages
-28. [End test confirm](https://aamhermansyah.github.io/cbt-website/qa-single-option.html) (completed)
-29. [Logout](https://aamhermansyah.github.io/cbt-website/dashboard.html) (completed)
-30. [Notifications](https://aamhermansyah.github.io/cbt-website/dashboard.html) (completed)
+28. [End test confirm](https://aamhermansyah.github.io/cbt-website/qa-single-option.html)
+29. [Logout](https://aamhermansyah.github.io/cbt-website/dashboard.html)
+30. [Notifications](https://aamhermansyah.github.io/cbt-website/dashboard.html)
+
+#### 02 May 2023 - Revisions
+31. `Clear menu revision in` [side menu pages](https://aamhermansyah.github.io/cbt-website/dashboard.html) (mobile view)
 
 #### Ongoing
-31. Profile - Password reset popup
-32. Profile - New password popup
-33. Assessment - Additional settings popup
-34. QA - Jump to quetion popup
+32. Profile - Password reset popup
+33. Profile - New password popup
+34. Assessment - Additional settings popup
+35. QA - Jump to quetion popup
