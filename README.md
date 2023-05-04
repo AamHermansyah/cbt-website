@@ -32,3 +32,23 @@
 18. [Select subject](https://aamhermansyah.github.io/cbt-website/select-subject.html)
 19. [Instructions (Fresh Test)](https://aamhermansyah.github.io/cbt-website/instructions.html)
 20. [Instructions (Resume Test)](https://aamhermansyah.github.io/cbt-website/instructions-resume.html)
+
+#### 04 May 2023 - QA (Completed)
+21. [QA single option](https://aamhermansyah.github.io/cbt-website/qa-single-option.html)
+22. [QA single option (wrong)](https://aamhermansyah.github.io/cbt-website/qa-single-option-wrong.html)
+23. [QA multiple options](https://aamhermansyah.github.io/cbt-website/qa-mutiple-option.html)
+24. [QA multiple option (wrong)](https://aamhermansyah.github.io/cbt-website/qa-mutiple-option-wrong.html)
+25. [Pause test](https://aamhermansyah.github.io/cbt-website/pause-test.html)
+26. [Result test (passed)](https://aamhermansyah.github.io/cbt-website/result-test-passed.html)
+27. [Result test (failed)](https://aamhermansyah.github.io/cbt-website/result-test-failed.html)
+
+#### 04 May 2023 - Popup in pages
+28. [End test comfirm](https://aamhermansyah.github.io/cbt-website/qa-single-option.html) (completed)
+29. [Logout](https://aamhermansyah.github.io/cbt-website/dashboard.html) (completed)
+30. [Notifications](https://aamhermansyah.github.io/cbt-website/dashboard.html) (completed)
+
+#### Ongoing
+31. Profile - Password reset popup
+32. Profile - New password popup
+33. Assessment - Additional settings popup
+34. QA - Jump to quetion popup

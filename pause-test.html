@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QA - Pause Test</title>
+  <link rel="stylesheet" href="./dist/output.css">
+</head>
+<body>
+  <section class="container-layout">
+    <div class="mt-4">
+      <h4 class="text-[23px] font-semibold text-center">
+        Time Left: 
+        <span class="text-danger-d200">
+          0:08:32
+        </span>
+      </h4>
+      <div class="mt-4">
+        <div class="w-full flex justify-between gap-4 mb-1">
+          <p class="sm:pl-[23px] text-sm sm:text-base text-right font-medium">
+            Criminal Law 
+            <span class="text-neutral-n100">2023</span>
+          </p>
+          <p class="text-sm sm:text-base text-right font-semibold text-primary">
+            63% Completed
+          </p>
+        </div>
+        <div class="w-full h-[5px] rounded-full bg-neutral-n40">
+          <span class="block w-[63%] h-full rounded-full bg-primary"></span>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="w-full flex justify-between gap-4 items-center mt-10">
+        <h3 class="text-primary text-xl sm:text-[32px] font-medium">
+          Question 35
+        </h3>
+        <button class="flex items-center gap-[10px] text-sm lg:text-lg font-semibold p-2 sm:p-[15px] border border-primary text-primary rounded-[7.5px] whitespace-nowrap">
+          <span>Pause Test</span>
+          <img
+            src="./public/icons/pause.svg"
+            alt="pause-icon"
+            class="w-[25px] aspect-square"
+          >
+        </button>
+      </div>
+    </div>
+
+    <div class="relative max-w-[870px] mx-auto mt-10">
+      <!-- Popup pause test -->
+      <div
+        class="absolute inset-0 flex-center bg-white"
+        style="box-shadow: 0px 1px 7.5px 7px rgb(255, 255, 255);"
+      >
+        <h3 class="sm:text-xl md:text-2xl font-semibold text-primary text-center">
+          This test has been paused, Click on resume test to continue 
+        </h3>
+      </div>
+      <div
+        class="rounded-[7.5px] active:scale-95 transition mb-6"
+        style="box-shadow: 0px 0.9375px 7.5px rgba(0, 0, 0, 0.25);"
+      >
+        <label
+          for="select-1"
+          class="w-full flex items-center justify-between px-6 sm:px-[30px] py-4 sm:py-[25px] cursor-pointer"
+        >
+          <span class="text-base sm:text-lg lg:text-xl font-semibold">
+            A. Option A
+          </span>
+          <input
+            type="checkbox"
+            name="select-1"
+            id="select-1"
+            class="w-[25px] md:w-[30px] aspect-square"
+          >
+        </label>
+      </div>
+
+      <div
+        class="rounded-[7.5px] active:scale-95 transition mb-6"
+        style="box-shadow: 0px 0.9375px 7.5px rgba(0, 0, 0, 0.25);"
+      >
+        <label
+          for="select-2"
+          class="w-full flex items-center justify-between px-6 sm:px-[30px] py-4 sm:py-[25px] cursor-pointer"
+        >
+          <span class="text-base sm:text-lg lg:text-xl font-semibold">
+            B. Option B
+          </span>
+          <input
+            type="checkbox"
+            name="select-2"
+            id="select-2"
+            class="w-[25px] md:w-[30px] aspect-square"
+          >
+        </label>
+      </div>
+
+      <div
+        class="rounded-[7.5px] active:scale-95 transition mb-6"
+        style="box-shadow: 0px 0.9375px 7.5px rgba(0, 0, 0, 0.25);"
+      >
+        <label
+          for="select-3"
+          class="w-full flex items-center justify-between px-6 sm:px-[30px] py-4 sm:py-[25px] cursor-pointer"
+        >
+          <span class="text-base sm:text-lg lg:text-xl font-semibold">
+            C. Option C
+          </span>
+          <input
+            type="checkbox"
+            name="select-3"
+            id="select-3"
+            class="w-[25px] md:w-[30px] aspect-square"
+          >
+        </label>
+      </div>
+
+      <div
+        class="rounded-[7.5px] active:scale-95 transition mb-6"
+        style="box-shadow: 0px 0.9375px 7.5px rgba(0, 0, 0, 0.25);"
+      >
+        <label
+          for="select-4"
+          class="w-full flex items-center justify-between px-6 sm:px-[30px] py-4 sm:py-[25px] cursor-pointer"
+        >
+          <span class="text-base sm:text-lg lg:text-xl font-semibold">
+            D. Option D
+          </span>
+          <input
+            type="checkbox"
+            name="select-4"
+            id="select-4"
+            class="w-[25px] md:w-[30px] aspect-square"
+          >
+        </label>
+      </div>
+    </div>
+
+    <div class="max-w-[572px] flex justify-between gap-6 mx-auto mt-10">
+      <button
+        class="w-[150px] flex items-center justify-center gap-1 text-sm lg:text-[20px] text-neutral-n50 font-semibold p-2 sm:p-[15px] rounded-[7.5px]"
+        style="box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.25);"
+      >
+        <span class="block w-[24px] aspect-square">
+          <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.5 17L6.5 12M6.5 12L11.5 7M6.5 12L18.5 12" stroke="#C2C7D0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>            
+        </span>
+        <span>Previous</span>
+      </button>
+
+      <button
+        class="w-[150px] flex items-center justify-center gap-1 text-sm lg:text-[20px] text-neutral-n50 font-semibold p-2 sm:p-[15px] rounded-[7.5px]"
+        style="box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.25);"
+      >
+        <span>Next</span>
+        <span class="block w-[24px] aspect-square">
+          <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.5 7L18.5 12M18.5 12L13.5 17M18.5 12L6.5 12" stroke="#C2C7D0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>            
+        </span>
+      </button>
+    </div>
+
+    <div class="mt-[50px] flex justify-between flex-wrap gap-4 items-center">
+      <div class="flex gap-4 p-2 border border-dashed border-primary-b200">
+        <button
+          class="text-xs sm:text-base text-neutral-n100 font-semibold btn py-2 px-3 sm:py-3 sm:px-5 rounded-lg"
+          style="box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.25);"
+        >
+          34
+        </button>
+        <button class="text-xs sm:text-base font-semibold btn py-2 px-3 sm:py-3 sm:px-5 bg-primary text-white rounded-lg">
+          35
+        </button>
+        <button
+          class="text-xs sm:text-base text-neutral-n100 font-semibold btn py-2 px-3 sm:py-3 sm:px-5 rounded-lg"
+          style="box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.25);"
+        >
+          36
+        </button>
+      </div>
+
+      <div class="flex flex-col">
+        <div class="self-end">
+          <a
+            href=""
+            class="w-max font-semibold btn py-3 px-5 text-neutral-n50 rounded-lg"
+            style="box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.25);"
+          >
+            End Test
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
