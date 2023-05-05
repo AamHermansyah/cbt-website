@@ -47,11 +47,11 @@
 29. [Logout](https://aamhermansyah.github.io/cbt-website/dashboard.html)
 30. [Notifications](https://aamhermansyah.github.io/cbt-website/dashboard.html)
 
-#### 02 May 2023 - Revisions
+#### 04 May 2023 - Revisions
 31. `Clear menu revision in` [side menu pages](https://aamhermansyah.github.io/cbt-website/dashboard.html) (mobile view)
 
-#### Ongoing
-32. Profile - Password reset popup
-33. Profile - New password popup
-34. Assessment - Additional settings popup
-35. QA - Jump to quetion popup
+#### 05 May 2023 - Popup in pages (Completed)
+32. [Profile](https://aamhermansyah.github.io/cbt-website/profile.html) - Password reset popup
+33. [Profile](https://aamhermansyah.github.io/cbt-website/profile.html) - New password popup
+34. [Assessment](https://aamhermansyah.github.io/cbt-website/additional-settings.html) - Additional settings popup
+35. [QA](https://aamhermansyah.github.io/cbt-website/jump-to-question.html) - Jump to quetion popup

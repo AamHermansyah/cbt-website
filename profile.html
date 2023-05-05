@@ -32,6 +32,143 @@
     </div>
   </div>
 
+  <!-- Forgot password popup -->
+  <div
+    id="forgot-password-popup"
+    class="hidden fixed inset-0 bg-white flex-center bg-opacity-50 backdrop-blur p-4 z-50"
+  >
+    <div class="w-full max-w-[500px] py-8 sm:py-10 bg-white rounded-[15px] shadow-md border border-neutral-n40 px-6 md:px-10">
+      <button
+        class="w-[25px] aspect-square"
+        onclick="closePopupForgotPassword()"
+      >
+        <img
+          src="./public/icons/x.svg"
+          alt="close notifications icon"
+          class="w-full h-full object-cover"
+        >
+      </button>
+      <h2 class="text-2xl font-medium text-primary text-center">
+        Forgot Your Password?
+      </h2>  
+      <form class="mt-4">     
+        <p class="text-sm font-medium text-center">
+          Please enter the OTP Code sent to <b>XYZ@example.com</b>
+        </p>
+        <div class="mb-10 mt-6">
+          <label for="otp" class="block text-neutral-n100 mb-4 text-sm font-medium">
+            OTP Code
+          </label>
+          <input
+            type="text"
+            id="otp"
+            name="otp"
+            class="border border-neutral-n100 text-neutral rounded-[15px] focus:ring-primary valid:focus:outline-primary focus:border-primary w-full py-[18px] px-[30px] font-medium placeholder:text-neutral placeholder:font-medium invalid:border-danger-d75 invalid:outline-danger-d200 peer"
+            placeholder="Enter OTP Code"
+            pattern="\d+"
+            required
+          >
+          <p class="hidden peer-invalid:block text-danger-d200 mt-4">
+            Wrong OTP Code
+          </p>
+        </div>
+
+        <button
+          type="button"
+          class="btn sm:text-[20px] bg-primary text-white mt-3 w-full"
+          onclick="onClickResetPaswordBtn()"
+        >
+          Reset Password
+        </button>
+        <p class="text-sm sm:text-base mt-4 text-center">
+          Din't receive a code? <a href="" class="text-primary font-semibold">Resend Code</a>
+        </p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Reset password popup -->
+  <div
+    id="reset-password-popup"
+    class="hidden fixed inset-0 bg-white flex-center bg-opacity-50 backdrop-blur p-4 z-50"
+  >
+    <div class="w-full max-w-[500px] py-10 bg-white rounded-[15px] shadow-md border border-neutral-n40 px-6 md:px-10">
+      <button
+        class="w-[25px] aspect-square"
+        onclick="closePopupResetPassword()"
+      >
+        <img
+          src="./public/icons/x.svg"
+          alt="close notifications icon"
+          class="w-full h-full object-cover"
+        >
+      </button>
+      <h2 class="text-2xl font-medium text-primary text-center">
+        Reset Password
+      </h2>  
+      <form class="mt-4">     
+        <div class="mb-6">
+          <label for="password" class="block text-neutral-n100 mb-4 text-sm font-medium">
+            New Password
+          </label>
+          <div class="flex font-medium border border-neutral-n100 text-neutral px-[30px] rounded-[15px]  outline-primary focus-within:outline focus-within:outline-2">              
+            <input
+              type="password"
+              id="password"
+              class="py-[18px] pr-4 w-full placeholder:text-neutral placeholder:font-medium outline-none"
+              placeholder="Enter New Password"
+              required
+            >
+            <div class="flex-center cursor-pointer">
+              <img
+                src="./public/icons/password-visibility.svg"
+                alt="password-visibility"
+                class="password-visibility w-full aspect-square object-fill"
+              >
+              <img
+                src="./public/icons/password-hidden.svg"
+                alt="password-hidden"
+                class="password-hidden w-full aspect-square object-fill"
+                style="display: none;"
+              >   
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-10">
+          <label for="confirm-password" class="block text-neutral-n100 mb-4 text-sm font-medium">
+            Confirm New Password
+          </label>
+          <div class="flex font-medium border border-neutral-n100 text-neutral px-[30px] rounded-[15px]  outline-primary focus-within:outline focus-within:outline-2">              
+            <input
+              type="password"
+              id="confirm-password"
+              class="py-[18px] pr-4 w-full placeholder:text-neutral placeholder:font-medium outline-none"
+              placeholder="Enter Confirm New Password"
+              required
+            >
+            <div class="flex-center cursor-pointer">
+              <img
+                src="./public/icons/password-visibility.svg"
+                alt="password-visibility"
+                class="password-visibility w-full aspect-square object-fill"
+              >
+              <img
+                src="./public/icons/password-hidden.svg"
+                alt="password-hidden"
+                class="password-hidden hidden w-full aspect-square object-fill"
+              >   
+            </div>
+          </div>
+        </div>
+
+        <button class="btn sm:text-[20px] bg-primary text-white mt-2 sm:mt-6 w-full">
+          Reset Password
+        </button>
+      </form>
+    </div>
+  </div>
+
   <!-- navbar -->
   <header class="container-layout border border-neutral rounded-b-[15px] p-0">
     <section class="py-5 px-4 sm:px-10">
@@ -228,7 +365,7 @@
   <div class="container-layout mt-5 flex p-0">
     <aside
       id="aside"
-      class="-translate-x-[100%] lg:translate-x-0 fixed top-0 left-0 lg:static w-[240px] max-h-[900px] z-10 bg-white flex flex-col justify-between border border-neutral rounded-tr-[15px] py-[31px] transition-transform duration-200 ease-out shadow-xl shadow-neutral-n100 md:shadow-none"
+      class="-translate-x-[100%] lg:translate-x-0 fixed top-0 left-0 lg:static w-[240px] max-h-[900px] z-10 bg-white flex flex-col justify-between border border-neutral rounded-tr-[15px] py-[31px] transition-transform duration-200 ease-out shadow-xl shadow-neutral-n100 md:shadow-none lg:mt-2"
     >
       <div>
         <div class="flex flex-wrap gap-1 pl-6 pr-3">
@@ -369,7 +506,11 @@
           </div>
 
           <div class="flex flex-col">
-            <button type="button" class="w-max text-sm block text-primary font-semibold">
+            <button
+              type="button"
+              class="w-max text-sm block text-primary font-semibold"
+              onclick="onClickChangePaswordBtn()"
+            >
               Change Password
             </button>
             <a href="/cbt-website/profile-edit.html" class="w-max self-end font-semibold btn py-3 px-5 bg-primary text-white rounded-lg mt-20">
@@ -385,6 +526,8 @@
     const asideElement = document.getElementById('aside');
     const logoutPopup = document.getElementById('popup-logout');
     const notificationsPopup = document.getElementById('notifications-popup');
+    const forgotPasswordPopup = document.getElementById('forgot-password-popup');
+    const resetPasswordPopup = document.getElementById('reset-password-popup');
 
     const btnNavHamb = document.getElementById('nav-hamburger');
     btnNavHamb.addEventListener('click', () => {
@@ -445,6 +588,44 @@
     function closePopupNotifications() {
       notificationsPopup.classList.add('hidden');
     }
+
+    // forgot password
+    function onClickChangePaswordBtn() {
+      forgotPasswordPopup.classList.remove('hidden');
+    }
+
+    function closePopupForgotPassword() {
+      forgotPasswordPopup.classList.add('hidden');
+    }
+
+    // reset password
+    function onClickResetPaswordBtn() {
+      closePopupForgotPassword();
+      resetPasswordPopup.classList.remove('hidden');
+    }
+
+    function closePopupResetPassword() {
+      resetPasswordPopup.classList.add('hidden');
+    }
+
+    // handle password visibility
+    const btnVisibilityPassword = document.querySelectorAll('form .password-visibility');
+    btnVisibilityPassword.forEach((element) => {
+      element.addEventListener('click', () => {
+        element.style.display = 'none';
+        element.nextElementSibling.style.display = 'block';
+        element.parentElement.previousElementSibling.type = 'text';
+      });
+    });
+
+    const btnHiddenPassword = document.querySelectorAll('form .password-hidden');
+    btnHiddenPassword.forEach((element) => {
+      element.addEventListener('click', () => {
+        element.style.display = 'none';
+        element.previousElementSibling.style.display = 'block';
+        element.parentElement.previousElementSibling.type = 'password';
+      })
+    })
   </script>
 </body>
 </html>
