@@ -55,3 +55,7 @@
 33. [Profile](https://aamhermansyah.github.io/cbt-website/profile.html) - New password popup
 34. [Assessment](https://aamhermansyah.github.io/cbt-website/additional-settings.html) - Additional settings popup
 35. [QA](https://aamhermansyah.github.io/cbt-website/jump-to-question.html) - Jump to quetion popup
+
+#### 06 May 2023 - Revisions
+36. `Fixed progress percent on pages that have it`
+37. `Fixed progress chart in dashboard`
