@@ -35,20 +35,27 @@
     </div>
 
     <!-- hamburger navigation -->
-    <div class="block md:hidden group">
+    <div
+      id="hamburger-navigation"
+      class="block md:hidden"
+      onclick="toggleHamburgerNavigation(this)"
+    >
       <div class="relative w-[40px] h-[40px] p-1.5 cursor-pointer group">
         <img
           src="./public/icons/menu.svg"
           alt="menu-icon"
-          class="absolute inset-0 group-hover:opacity-0 w-full h-full transition-opacity duration-200"
+          class="absolute inset-0 w-full h-full transition-opacity duration-200"
         >
         <img
           src="./public/icons/x.svg"
           alt="x-icon"
-          class="absolute inset-0 opacity-0 group-hover:opacity-100 w-full h-full transition-opacity duration-200"
+          class="absolute inset-0 opacity-0 w-full h-full transition-opacity duration-200"
         >
       </div>
-      <div class="hidden group-hover:block fixed right-[3%] sm:right-[8%] top-[95x] bg-white p-10 shadow-xl rounded-xl border border-neutral-n30">
+      <div
+        class="hidden fixed right-[3%] sm:right-[8%] top-[95x] bg-white p-10 shadow-xl rounded-xl border border-neutral-n30"
+        onclick="event.stopPropagation()"
+      >
         <nav class="block">
           <ul class="flex-center flex-col gap-6 font-semibold">
             <li><a href="/cbt-website/" class="text-primary">Home</a></li>
@@ -215,5 +222,38 @@
       2023 Online Exam CBT. All rights reserved.
     </span>
   </footer>
+
+  <script>
+    // handle navigation
+    let isOpenNav = false;
+    function toggleHamburgerNavigation(current) {
+      const navbarIcon = current.firstElementChild;
+
+      if (!isOpenNav) {
+        navbarIcon.firstElementChild.classList.add('opacity-0');
+        navbarIcon.lastElementChild.classList.remove('opacity-0');
+        current.lastElementChild.classList.remove('hidden');
+        isOpenNav = !isOpenNav;
+        return;
+      }
+
+      navbarIcon.firstElementChild.classList.remove('opacity-0');
+      navbarIcon.lastElementChild.classList.add('opacity-0');
+      current.lastElementChild.classList.add('hidden');
+      isOpenNav = !isOpenNav;
+    }
+
+    // onclick outside event of elements
+    window.addEventListener('click', (e) => {
+      // close hamburger navigation
+      if (
+          e.target.closest('#hamburger-navigation') === null
+        )
+      {
+        const current = document.getElementById('hamburger-navigation');
+        toggleHamburgerNavigation(current);
+      }
+    });
+  </script>
 </body>
 </html>
